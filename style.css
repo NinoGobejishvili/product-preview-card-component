@@ -1,0 +1,166 @@
+/*mobile design*/
+
+.product-desktop{
+    display: none;
+    }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    height: 100vh;
+    font-family: 'Fraunces', serif;
+    }
+
+.card{
+    height: 612px;
+    width: 343px;
+    background-color: white;
+    border-radius: 15px;
+   }
+
+.product-mobile{
+    height: 240px;
+    width: 143.7;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    }  
+    
+header{
+    height: 15px;
+    width: 92px;
+    margin-top: 20px;
+    margin-left: 24px;
+    color: #6C7289;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 15px;
+    letter-spacing: 3px;
+    }    
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+    }
+
+h1{
+    height: 64px;
+    width: 295px;
+    font-weight: 700;
+    font-size: 32px;
+    color: #1C232B;
+    }
+
+.info{
+    font-weight: 500;
+    font-size: 14px;
+    color: #6C7289;
+    height: 92px;
+    width: 295px;
+    line-height: 23px;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    }
+
+.new-price{
+    font-size: 32px;
+    color: #3D8168;
+    font-weight: 700;
+    }
+
+.old-price{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    color: #6C7289;
+    font-size: 13px;
+    text-decoration: line-through;
+    }
+
+button{
+    height: 48px;
+    width: 295px;
+    background-color: #3D8168;
+    border: none;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    }    
+
+button:hover{
+    background-color: #1A4032;
+    cursor: pointer;
+} 
+
+/*desktop design*/
+
+@media screen and (min-width: 960px){
+
+    .product-mobile{
+        display: none;
+        }
+       
+    .product-desktop{
+        display: block;
+        height: 450px;
+        width: 338px;
+        margin: left;
+        }  
+    
+    body{
+        display: grid;
+        place-items: center;
+        margin: auto;
+        }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+
+    .text-container{
+        height: 450px;
+        width: 338;
+        padding: 32px;
+        } 
+        
+    h1{
+        height: 96px;
+        width: 236px;
+        }   
+         
+    .info{
+        height: 92px;
+        width: 237px;
+        }   
+
+    .card{
+        border-radius: 0px;
+        height: 452px;
+        width: 343px;
+        } 
+        
+    button{
+        margin-top: 30px;
+    }    
+}
+
+
+
+
